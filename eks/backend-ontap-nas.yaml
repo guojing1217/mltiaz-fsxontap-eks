@@ -7,8 +7,8 @@ spec:
   version: 1
   backendName: fsx-ontap
   storageDriverName: ontap-nas
-  managementLIF: [#replace with your svm management endpoint in FSxONTAP console]
-  dataLIF: [#replace with your svm NAS endpoint in FSxONTAP console]
+  managementLIF: [#replace with the Management DNS name for your svm management endpoint in FSxONTAP console]
+  dataLIF: [#replace with the NFS DNS name for your svm NFS data endpoint in FSxONTAP console]
   svm: SVM1
   credentials:
     name: backend-fsx-ontap-nas-secret
