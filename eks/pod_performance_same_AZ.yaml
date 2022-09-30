@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: task-trident-nas-pv-claim
+  name: task-trident-nas-pv-claim-saz
 spec:
   accessModes:
     - ReadWriteOnce
@@ -18,7 +18,7 @@ spec:
   volumes:
     - name: task-trident-nas-pv-storage
       persistentVolumeClaim:
-        claimName: task-trident-nas-pv-claim  
+        claimName: task-trident-nas-pv-claim-saz  
   containers:
     - name: task-pv-container
       image: nginx
