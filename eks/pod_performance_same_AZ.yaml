@@ -29,4 +29,4 @@ spec:
         - mountPath: "/usr/share/trident-nas/"
           name: task-trident-nas-pv-storage
   nodeSelector: # to make sure the pod stays in the same region
-    topology.ebs.csi.aws.com/zone: ap-east-1a
+    topology.ebs.csi.aws.com/zone: ap-southeast-2 # replace with your region name
