@@ -10,8 +10,8 @@ vpc:
     publicAccess: true # Create the EKS control planes in the public subnets
   subnets:
     public: # Create the EKS control planes in the public subnets
-      ap-southeast-2a: { id: public-subnet-1 } #replace with your subnetid
-      ap-southeast-2b: { id: public-subnet-2 }
+      ap-southeast-2a: { id: public-subnet-1 } #replace with your region name and corresponding subnetid
+      ap-southeast-2b: { id: public-subnet-2 } #replace with your region name and corresponding subnetid
 iam:
   withOIDC: true
 addons:
